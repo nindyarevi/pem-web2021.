@@ -1,0 +1,43 @@
+h1 {
+    font-family:  Helvetica;
+    font-style: underline;
+    color: black;
+}
+p{
+    font-family: segoe 'Segoe UI';
+    font-style: italic;
+    font-style: bold;
+    color: black;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #D8E9A8;
+}
+.header{
+    background-color: #D8E9A8;
+    padding: 20px;
+    text-align: center;
+}
+.topnav{
+    overflow: hidden;
+    background-color: #D8E9A8;
+    font-family: bahnschrift;
+
+}
+.topnav a{
+    float: left;
+    display: block;
+    color: black;
+    text-align: left;
+    padding: 14px 16px;
+    text-decoration: black;
+    
+}
+.topnav a:hover{
+    background-color: #D8E9A8;
+    color: black;
+}
+   

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VegieHouse</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="style/css" href="contact.css">
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #D8E9A8;
+                margin: 3;
+            }
+            .header{
+                background-color: #D8E9A8;
+                padding: 20px;
+                text-align: left;
+                font-family: Architects Daughter;
+            }
+            .navigation{
+                overflow: hidden;
+                background-color: #0B4619;
+                font-family: bahnschrift;
+            }
+            .navigation a{
+                float: right;
+                display: block;
+                color: black;
+                text-align: right;
+                padding: 12px 13px;
+                text-decoration: black;
+            }
+            .navigation a:hover{
+                background-color: #0B4619;
+                color: black;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: #0B4619;
+                font-family: bahnschrift;
+
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: black;
+                
+            }
+            .topnav a:hover{
+                background-color: #0B4619;
+                color: black;
+            }
+        </style>
+        <div class="navigation">
+            <h3 align="right">
+                <nav>
+                <a href="search.html">Search</a>
+                <a href="login.html">Log In</a>
+                <a href="signin.html">Sign In</a>
+                </nav>
+            </h3>
+            </div>
+        
+            <div class="header">
+                <h1 style="font-family: bahnschrift;">VegieHouse</h1>
+                <p style="font-family: bahnschrift">i see it, i buy it</p>
+            </div>
+            
+            <div class="topnav">
+                    
+                <a href="homepage.html">Home</a> 
+                <a href="about.html">About</a> 
+                <a href="local.html">Local</a> 
+                <a href="import.html">Import</a>
+                <a href="#">Contact</a>
+            </div>
+            <h1>Contact</h1>
+            <img src="url.png" width="30" height="30"> www.vegiehouse.com <br>
+            <img src="instagram.png" width="30" height="30"> @vegiehouse <br>
+            <img src="twitter.png" width="30" height="30"> @vegiehousetwt <br>
+            <img src="whatsapp.png" width="30" height="30"> 082226319109 <br>
+
+            <br><br><br><br>
+    <p style="font-weight: 300; text-align: right;"><b><span id="tanggalwaktu"></b></span></p>
+        <script>
+            var tw = new Date();
+                if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+                else (a=tw.getTime());
+                tw.setTime(a);
+            var tahun= tw.getFullYear ();
+            var hari= tw.getDay ();
+            var bulan= tw.getMonth ();
+            var tanggal= tw.getDate ();
+            var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+            var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+                document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+        </script>
+    </body>
+    <br><br><br><br>
+    <footer>
+        <p align="center">Copyright @2022 Nindya Revi</p>
+    </footer>
+</html>

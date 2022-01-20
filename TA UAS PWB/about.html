@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VegieHouse</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="style/css" href="about.css">
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #D8E9A8;
+                margin: 3;
+            }
+            .header{
+                background-color: #D8E9A8;
+                padding: 20px;
+                text-align: left;
+                font-family: Architects Daughter;
+            }
+            .navigation{
+                overflow: hidden;
+                background-color: #0B4619;
+                font-family: bahnschrift;
+            }
+            .navigation a{
+                float: right;
+                display: block;
+                color: black;
+                text-align: right;
+                padding: 12px 13px;
+                text-decoration: black;
+            }
+            .navigation a:hover{
+                background-color: #0B4619;
+                color: black;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: #0B4619;
+                font-family: bahnschrift;
+
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: black;
+                
+            }
+            .topnav a:hover{
+                background-color: #0B4619;
+                color: black;
+            }
+        </style>
+        <div class="navigation">
+            <h3 align="right">
+                <nav>
+                <a href="search.html">Search</a>
+                <a href="login.html">Log In</a>
+                <a href="signin.html">Sign In</a>
+                </nav>
+            </h3>
+            </div>
+        
+            <div class="header">
+                <h1 style="font-family: bahnschrift;">VegieHouse</h1>
+                <p style="font-family: bahnschrift">i see it, i buy it</p>
+            </div>
+            
+            <div class="topnav">
+                    
+                <a href="homepage.html">Home</a> 
+                <a href="#">About</a> 
+                <a href="local.html">Local</a> 
+                <a href="import.html">Import</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <h1>About Us</h1>
+            <h4>
+                VegieHouse adalah aplikasi berbasis web yang digunakan untuk membeli sayuran dari petani lokal maupun 
+                sayuran import. Hal ini bertujuan untuk membantu para konsumen membeli sayur 
+                secara praktis yakni menghemat tenaga dan waktu yang diperlukan. Aplikasi berbasis 
+                web ini bekerja sama dengan petani local untuk stok sayuran lokal yang membantu para 
+                petani lokal mengembangkan usaha perkebunan mereka. Dalam aplikasi berbasis web 
+                ini kita membantu para pengusaha lokal agar dapat bersaing dalam dunia bisnis yang 
+                ada di tanah air.
+                <br>
+                <b>Deskripsi Pengguna</b>
+                Aplikasi ini memiliki 2 jenis pengguna yaitu
+                <b>1.</b> Pembeli/Konsumen : Mendaftarkan diri dan melengkapi data yang valid 
+                untuk mempermudah proses transaksi pembelian. Konsumen dapat memilih 
+                sayur yang ingin dibeli entah itu sayuran petani lokal atau import yang diberi 
+                deskripsi singkat disetiap produk agar calon pembeli tahu mengenai detail 
+                sayuran itu sekaligus mengedukasi tentang sayuran.
+                <b>2.</b> Instansi Pengelola : Melakukan login sesuai registrasi di awal, selanjutnya 
+                akan mengecek pesanan yang masuk lalu segera diproses dan dilakukan 
+                pengiriman ke alamat konsumen. Selain itu, instansi pengelola juga bertugas 
+                mengawasi stok yang ada dan sesuai dengan jumlah barang yang ada di web 
+                dan tempat penyimpanan.
+
+            </h4>
+            <br><br><br><br>
+    <p style="font-weight: 300; text-align: right;"><b><span id="tanggalwaktu"></b></span></p>
+        <script>
+            var tw = new Date();
+                if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+                else (a=tw.getTime());
+                tw.setTime(a);
+            var tahun= tw.getFullYear ();
+            var hari= tw.getDay ();
+            var bulan= tw.getMonth ();
+            var tanggal= tw.getDate ();
+            var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+            var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+                document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+        </script>
+    </body>
+    <br><br><br><br>
+    <footer>
+        <p align="center">Copyright @2022 Nindya Revi</p>
+    </footer>
+</html>
