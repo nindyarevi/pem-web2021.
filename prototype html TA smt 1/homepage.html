@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VegieHouse</title>
+        <meta charset="utf-8">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="style/css" href="homepage.css">
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #D8E9A8;
+                margin: 3;
+            }
+            .header{
+                background-color: #D8E9A8;
+                padding: 20px;
+                text-align: left;
+                font-family: Architects Daughter;
+            }
+            .navigation{
+                overflow: hidden;
+                background-color: #0B4619;
+                font-family: bahnschrift;
+            }
+            .navigation a{
+                float: right;
+                display: block;
+                color: black;
+                text-align: right;
+                padding: 12px 13px;
+                text-decoration: black;
+            }
+            .navigation a:hover{
+                background-color: #0B4619;
+                color: black;
+            }
+            .topnav{
+                overflow: hidden;
+                background-color: #0B4619;
+                font-family: bahnschrift;
+
+            }
+            .topnav a{
+                float: left;
+                display: block;
+                color: black;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: black;
+                
+            }
+            .topnav a:hover{
+                background-color: #0B4619;
+                color: black;
+            }
+        </style>
+     
+     <div class="navigation">
+    <h3 align="right">
+        <nav>
+        <a href="search.html">Search</a>
+        <a href="login.html">Log In</a>
+        <a href="signin.html">Sign In</a>
+        </nav>
+    </h3>
+    </div>
+
+    <div class="header">
+        <h1 style="font-family: bahnschrift;">VegieHouse</h1>
+        <p style="font-family: bahnschrift">i see it, i buy it</p>
+    </div>
+    
+    <div class="topnav">
+    		
+	    <a href="#">Home</a> 
+	    <a href="about.html">About</a> 
+	    <a href="local.html">Local</a> 
+	    <a href="import.html">Import</a>
+        <a href="contact.html">Contact</a>
+    </div>
+    
+    <img src="https://img.icons8.com/material/24/000000/shopping-cart--v1.png" align="right"/>
+    <h1 style="font-family: bahnschrift;">PRODUCT</h1>
+    <h1 style="font-family: bahnschrift;">RECOMMENDATION</h1>
+    <tr>
+        <td>
+            <table>
+                <tr>
+                    <td><input type="image" src="pakcoy.jpg" width="150" height="100" alt="submit button"><figcaption align="center">pakcoy</figcaption></td>
+                    <td><input type="image" src="asparagus.jpg" width="100" height="100" alt="submit button"><figcaption align="center">asparagus</figcaption></td>
+                    <td><input type="image" src="brokoli.jpg" width="100" height="100" alt="submit button"><figcaption align="center">brokoli</figcaption></td>
+                    <td><input type="image" src="baby potato.jpg" width="100" height="100" alt="submit button"><figcaption align="center">baby potato</figcaption></td>
+                    <td><input type="image" src="tomat.jpg" width="100" height="100" alt="submit button"><figcaption align="center">tomat</figcaption></td>
+                    <td><input type="image" src="wortel.jpg" width="100" height="100" alt="submit button"><figcaption align="center">wortel</figcaption></td>
+                    <td><input type="image" src="paprika.jpg" width="100" height="100" alt="submit button"><figcaption align="center">paprika</figcaption></td>
+                    <td><input type="image" src="bayam.jpg" width="100" height="100" alt="submit button"><figcaption align="center">bayam</figcaption></td>
+                    <td><input type="image" src="selada.jpg" width="100" height="100" alt="submit button"><figcaption align="center">selada</figcaption></td>
+                    <td><input type="image" src="kangkung.jpg" width="100" height="100" alt="submit button"><figcaption align="center">kangkung</figcaption></td>
+                    <td><input type="image" src="timun jepun.jpg" width="100" height="100" alt="submit button"><figcaption align="center">timun jepun</figcaption></td>
+                    <td><input type="image" src="edamame.jpg" width="100" height="100" alt="submit button"><figcaption align="center">edamame</figcaption></td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+    <br><br><br><br>
+    <p style="font-weight: 300; text-align: right;"><b><span id="tanggalwaktu"></b></span></p>
+        <script>
+            var tw = new Date();
+                if (tw.getTimezoneOffset() == 0) (a=tw.getTime() + ( 7 *60*60*1000))
+                else (a=tw.getTime());
+                tw.setTime(a);
+            var tahun= tw.getFullYear ();
+            var hari= tw.getDay ();
+            var bulan= tw.getMonth ();
+            var tanggal= tw.getDate ();
+            var hariarray=new Array("Minggu,","Senin,","Selasa,","Rabu,","Kamis,","Jum'at,","Sabtu,");
+            var bulanarray=new Array("Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","Nopember","Desember");
+                document.getElementById("tanggalwaktu").innerHTML = hariarray[hari]+" "+tanggal+" "+bulanarray[bulan]+" "+tahun+" Jam " + ((tw.getHours() < 10) ? "0" : "") + tw.getHours() + ":" + ((tw.getMinutes() < 10)? "0" : "") + tw.getMinutes() + (" W.I.B ");
+        </script>
+    </body>
+    <br><br><br><br>
+    <footer>
+        <p align="center">Copyright @2022 Nindya Revi</p>
+    </footer>
+</html>
